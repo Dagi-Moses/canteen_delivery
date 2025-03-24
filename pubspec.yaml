@@ -1,0 +1,129 @@
+name: canteen_delivery
+description: "Noels Canteen Delivery."
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.2.3 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.2
+
+  flutter_hooks: ^0.20.4
+  flutter_localizations:
+    sdk: flutter
+  intl: ^0.19.0
+  logging: ^1.2.0
+  win32: ^5.12.0
+
+  #StateManagement
+  hooks_riverpod: ^2.3.6 
+  riverpod_annotation: ^2.1.1
+
+  provider: ^6.1.2
+  
+  #Connectivity
+  connectivity_plus: ^5.0.2
+
+  #Location
+  location: ^8.0.0
+  geolocator: ^13.0.3
+  google_maps_flutter: ^2.11.0
+  flutter_polyline_points: ^2.0.0
+  go_router: ^10.1.0
+
+  # FP
+  fpdart: ^1.0.0-beta.1
+  rxdart: ^0.27.7
+
+  #Apis
+  dio: ^5.4.0
+
+  #Firebase
+  cloud_firestore: ^5.5.0
+  firebase_auth: ^5.3.3
+  firebase_core: ^3.8.0
+  firebase_storage: ^12.3.6
+  firebase_messaging: ^15.1.5
+
+  #LocalStorage
+  shared_preferences: ^2.2.2
+  sqflite: ^2.3.0
+  flutter_cache_manager: ^3.3.1
+  image_picker: ^1.0.5
+
+  #Images
+  cached_network_image: ^3.3.0
+  lottie: ^2.7.0
+
+  #Utils
+  freezed_annotation: ^2.4.1
+  dartz: ^0.10.1
+  equatable: ^2.0.5
+  flutter_fadein: ^2.0.0 
+  uuid: ^4.2.2
+  url_launcher: ^6.2.2
+  flutter_local_notifications: ^19.0.0
+  timeago: ^3.6.0
+  device_preview: ^1.2.0
+  
+  #Widgets
+  flutter_platform_widgets: ^6.0.2
+  fluttertoast: ^8.2.4
+  qr_flutter: ^4.1.0
+  material_floating_search_bar_2: ^0.5.0
+  device_info_plus: ^9.0.3
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.1
+  flutter_launcher_icons: ^0.13.1
+  flutter_adaptive_scaffold: ^0.1.6
+  build_runner: ^2.4.7
+  fast_immutable_collections: ^9.1.5
+  freezed: ^2.4.6
+  
+flutter_icons:
+  image_path_android: "assets/images/core/icon.png"
+  image_path_ios: "assets/images/core/icon.png"
+  android: true
+  ios: true
+  remove_alpha_ios: true
+  adaptive_icon_background: "#121B24"
+  adaptive_icon_foreground: "assets/images/core/icon_adaptive_fore.png"
+
+flutter:
+  generate: true
+  uses-material-design: true
+  
+
+flutter_intl:
+  enabled: true  
+
+  assets:
+    - assets/fonts/
+    - assets/icons/
+    - assets/icons/dialog_widget_icons/
+    - assets/icons/languages_icons/
+    - assets/icons/screens_icons/
+    - assets/images/core/
+    - assets/images/login/
+    - assets/launcher_icon/
+    - assets/map_styles/
+    - assets/native_splash/
+    
+
+  fonts:
+    - family: poppins
+      fonts:
+        - asset: assets/fonts/Poppins-Regular.ttf
+        - asset: assets/fonts/Poppins-Bold.ttf
+          weight: 900
+    - family: tajawal
+      fonts:
+        - asset: assets/fonts/Tajawal-Regular.ttf
+        - asset: assets/fonts/Tajawal-Bold.ttf
+          weight: 900
